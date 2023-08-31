@@ -1253,7 +1253,7 @@
         },
         {
             "key": "field_6405adba2f888",
-            "label": "Метки",
+            "label": "Tags",
             "name": "tags",
             "type": "taxonomy",
             "instructions": "",
@@ -1311,5 +1311,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1690291839
+    "modified": 1682629705
 }
