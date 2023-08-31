@@ -169,8 +169,6 @@ add_action('woocommerce_after_add_to_cart_form', 'woo_card_1', 100);
 
 
 
-
-
 //Base Model Description
 function base_model_description()
 {
