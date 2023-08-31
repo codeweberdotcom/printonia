@@ -1,0 +1,170 @@
+{
+    "key": "group_6303aa441023e",
+    "title": "CW Widgets",
+    "fields": [
+        {
+            "key": "field_6303b72d21f26",
+            "label": "Widgets",
+            "name": "widgets",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layouts": {
+                "layout_6303b81390d12": {
+                    "key": "layout_6303b81390d12",
+                    "name": "widget_1",
+                    "label": "Recent Posts",
+                    "display": "block",
+                    "sub_fields": [],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_6303be46e46df": {
+                    "key": "layout_6303be46e46df",
+                    "name": "widget_2",
+                    "label": "Social Icons",
+                    "display": "block",
+                    "sub_fields": [],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_6303c17d9f8cc": {
+                    "key": "layout_6303c17d9f8cc",
+                    "name": "widget_3",
+                    "label": "About block",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_6303c18c9f8cd",
+                            "label": "Заголовок",
+                            "name": "title",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "field_62d88a70234a0"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        },
+                        {
+                            "key": "field_6303c1a19f8ce",
+                            "label": "Paragraph",
+                            "name": "paragraph",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "field_62d88aa4234a2"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_6303c4a975241": {
+                    "key": "layout_6303c4a975241",
+                    "name": "widget_4",
+                    "label": "Categories",
+                    "display": "block",
+                    "sub_fields": [],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_6303c86349b2a": {
+                    "key": "layout_6303c86349b2a",
+                    "name": "widget_5",
+                    "label": "Tags",
+                    "display": "block",
+                    "sub_fields": [],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_6303c9f2a2aee": {
+                    "key": "layout_6303c9f2a2aee",
+                    "name": "widget_6",
+                    "label": "Archives",
+                    "display": "block",
+                    "sub_fields": [],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_63dfc34e43e92": {
+                    "key": "layout_63dfc34e43e92",
+                    "name": "widget_7",
+                    "label": "Menu",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_63e012c86858b",
+                            "label": "Заголовок",
+                            "name": "title_widget",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            },
+            "button_label": "Добавить",
+            "min": "",
+            "max": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/widgets"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1690291839
+}

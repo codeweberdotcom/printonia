@@ -1,0 +1,374 @@
+{
+    "key": "group_63c2ad4fe2fa1",
+    "title": "CW Shape",
+    "fields": [
+        {
+            "key": "field_63c329cce90ab",
+            "label": "Shapes",
+            "name": "cw_shapes",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "block",
+            "button_label": "Add Shape",
+            "sub_fields": [
+                {
+                    "key": "field_63c2adc13ce70",
+                    "label": "Shape",
+                    "name": "",
+                    "type": "tab",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "placement": "top",
+                    "endpoint": 0
+                },
+                {
+                    "key": "field_63c2ad5dc2dd3",
+                    "label": "Type Shape",
+                    "name": "cw_type_shape",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "none": "none",
+                        "Dot": "Dot",
+                        "Line": "Line",
+                        "Solid": "Solid",
+                        "SVG": "SVG",
+                        "Doodles": "Doodles"
+                    },
+                    "default_value": "none",
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_63c2c02adc33d",
+                    "label": "Form",
+                    "name": "cw_form",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_63c2ad5dc2dd3",
+                                "operator": "==",
+                                "value": "Dot"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_63c2ad5dc2dd3",
+                                "operator": "==",
+                                "value": "Line"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_63c2ad5dc2dd3",
+                                "operator": "==",
+                                "value": "Solid"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "Restangle": "Restangle",
+                        "Circle": "Circle",
+                        "Rounded": "Rounded"
+                    },
+                    "default_value": "Restangle",
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_63e766d586a13",
+                    "label": "Doodles",
+                    "name": "cw_doodles",
+                    "type": "select",
+                    "instructions": "doodle1",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_63c2ad5dc2dd3",
+                                "operator": "==",
+                                "value": "Doodles"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "doodle1": "doodle1",
+                        "doodle2": "doodle2",
+                        "doodle3": "doodle3",
+                        "doodle4": "doodle4",
+                        "doodle5": "doodle5",
+                        "doodle6": "doodle6",
+                        "doodle7": "doodle7",
+                        "doodle8": "doodle8",
+                        "doodle9": "doodle9",
+                        "doodle10": "doodle10",
+                        "doodle11": "doodle11"
+                    },
+                    "default_value": false,
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_63c2bf6edc33c",
+                    "label": "SVG",
+                    "name": "cw_svg",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_63c2ad5dc2dd3",
+                                "operator": "==",
+                                "value": "SVG"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "hex": "hex",
+                        "tri": "tri",
+                        "circle": "circle",
+                        "blob": "blob",
+                        "blob2": "blob2",
+                        "ddd": "ddd"
+                    },
+                    "default_value": "Hex",
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_63c2ad9dc2dd4",
+                    "label": "Color",
+                    "name": "cw_color",
+                    "type": "clone",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "clone": [
+                        "group_6391c29e6e4b9"
+                    ],
+                    "display": "seamless",
+                    "layout": "block",
+                    "prefix_label": 0,
+                    "prefix_name": 0
+                },
+                {
+                    "key": "field_63c2aed33ce71",
+                    "label": "Size",
+                    "name": "",
+                    "type": "tab",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "placement": "top",
+                    "endpoint": 0
+                },
+                {
+                    "key": "field_63c2aef13ce72",
+                    "label": "Width",
+                    "name": "cw_width",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "none": "none",
+                        "1": "1",
+                        "2": "2",
+                        "3": "3",
+                        "4": "4",
+                        "5": "5",
+                        "6": "6",
+                        "7": "7",
+                        "8": "8",
+                        "9": "9",
+                        "10": "10",
+                        "11": "11",
+                        "12": "12",
+                        "13": "13",
+                        "14": "14",
+                        "15": "15",
+                        "16": "16",
+                        "17": "17",
+                        "18": "18",
+                        "19": "19",
+                        "20": "20",
+                        "21": "21",
+                        "22": "22",
+                        "23": "23",
+                        "24": "24",
+                        "25": "25"
+                    },
+                    "default_value": 18,
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_63c2af213ce73",
+                    "label": "Height",
+                    "name": "cw_height",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "none": "none",
+                        "1": "1",
+                        "2": "2",
+                        "3": "3",
+                        "4": "4",
+                        "5": "5",
+                        "6": "6",
+                        "7": "7",
+                        "8": "8",
+                        "9": "9",
+                        "10": "10",
+                        "11": "11",
+                        "12": "12",
+                        "13": "13",
+                        "14": "14",
+                        "15": "15",
+                        "16": "16",
+                        "17": "17",
+                        "18": "18",
+                        "19": "19",
+                        "20": "20",
+                        "21": "21",
+                        "22": "22",
+                        "23": "23",
+                        "24": "24",
+                        "25": "25"
+                    },
+                    "default_value": 18,
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_63cd435c9176d",
+                    "label": "Position",
+                    "name": "cw_position",
+                    "type": "clone",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "clone": [
+                        "group_63cd431d76d37"
+                    ],
+                    "display": "seamless",
+                    "layout": "block",
+                    "prefix_label": 0,
+                    "prefix_name": 0
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_format",
+                "operator": "==",
+                "value": "audio"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1690291837
+}

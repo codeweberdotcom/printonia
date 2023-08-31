@@ -1,0 +1,106 @@
+{
+    "key": "group_6304ef196b9ac",
+    "title": "Sliders",
+    "fields": [
+        {
+            "key": "field_6304ef242f7d1",
+            "label": "Slider",
+            "name": "slider",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layouts": {
+                "layout_6304ef2a6891b": {
+                    "key": "layout_6304ef2a6891b",
+                    "name": "slider_1",
+                    "label": "slider_1",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_63052fb584cc3",
+                            "label": "Заголовок",
+                            "name": "title",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "field_62d88a70234a0"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_63054ab34b16f": {
+                    "key": "layout_63054ab34b16f",
+                    "name": "slider_2",
+                    "label": "slider_2",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_63054abd4b171",
+                            "label": "Image customizable",
+                            "name": "image_customizable",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "field_630542ca16dc0"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            },
+            "button_label": "Добавить",
+            "min": "",
+            "max": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/sliders"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1690291839
+}

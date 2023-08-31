@@ -1,0 +1,413 @@
+{
+    "key": "group_6398d19d56ee1",
+    "title": "CW Background",
+    "fields": [
+        {
+            "key": "field_6398ec3fd72d0",
+            "label": "Background",
+            "name": "cw_background",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_6398efdf5c76d",
+                    "label": "Background",
+                    "name": "",
+                    "type": "tab",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "placement": "top",
+                    "endpoint": 0
+                },
+                {
+                    "key": "field_6399b66d3fcfc",
+                    "label": "Background Type",
+                    "name": "cw_background_type",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "Theme": "Theme",
+                        "Image": "Image",
+                        "Library": "Library",
+                        "Color": "Color",
+                        "Pattern": "Pattern",
+                        "Video": "Video"
+                    },
+                    "default_value": false,
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_6398f1205c76e",
+                    "label": "Image Background",
+                    "name": "cw_image_background",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_6399b66d3fcfc",
+                                "operator": "==",
+                                "value": "Image"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_6398f1fa5c76f",
+                    "label": "Background Size",
+                    "name": "cw_background_size",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_6399b66d3fcfc",
+                                "operator": "==",
+                                "value": "Image"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_6399b66d3fcfc",
+                                "operator": "==",
+                                "value": "Library"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "none": "none",
+                        "auto": "auto",
+                        "100%": "100%",
+                        "cover": "cover"
+                    },
+                    "default_value": "Default",
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_6398f5cfab769",
+                    "label": "Background Overlay",
+                    "name": "cw_background_overlay",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_6399b66d3fcfc",
+                                "operator": "==",
+                                "value": "Image"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_6399b66d3fcfc",
+                                "operator": "==",
+                                "value": "Video"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_6399b66d3fcfc",
+                                "operator": "==",
+                                "value": "Library"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "none": "none",
+                        "50%": "50%",
+                        "30%": "30%",
+                        "40%": "40%"
+                    },
+                    "default_value": "Default",
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_639b43b6d4ec0",
+                    "label": "Video Preview",
+                    "name": "cw_video_preview",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_6399b66d3fcfc",
+                                "operator": "==",
+                                "value": "Video"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_6399b92825d37",
+                    "label": "Video",
+                    "name": "cw_video",
+                    "type": "file",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_6399b66d3fcfc",
+                                "operator": "==",
+                                "value": "Video"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "library": "all",
+                    "min_size": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_6399b97725d38",
+                    "label": "Background Pattern",
+                    "name": "cw_background_pattern",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_6399b66d3fcfc",
+                                "operator": "==",
+                                "value": "Pattern"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_6399b9a925d39",
+                    "label": "Library image",
+                    "name": "cw_library_image",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_6399b66d3fcfc",
+                                "operator": "==",
+                                "value": "Library"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "bg1.jpg": "Photo 1",
+                        "bg2.jpg": "Abstarct 2",
+                        "bg3.jpg": "Abstarct 3",
+                        "bg4.jpg": "Abstarct 4",
+                        "bg5.jpg": "Abstarct 5",
+                        "bg6.jpg": "Photo 2",
+                        "bg7.jpg": "Photo 3",
+                        "bg8.jpg": "Photo 4",
+                        "bg9.jpg": "Photo 5",
+                        "bg10.jpg": "Photo 6",
+                        "bg11.jpg": "Photo 7",
+                        "bg12.jpg": "Photo 8",
+                        "bg13.jpg": "Abstarct 5",
+                        "bg14.png": "Gradient 14",
+                        "bg15.png": "Gradient 15",
+                        "bg16.png": "Gradient 16",
+                        "bg17.png": "Gradient 17",
+                        "bg18.png": "Gradient 18",
+                        "bg19.png": "Gradient 19",
+                        "bg20.png": "Gradient 20",
+                        "bg21.png": "Gradient 21",
+                        "bg22.png": "Gradient 22",
+                        "bg23.png": "Gradient 23",
+                        "bg24.png": "Gradient 24",
+                        "bg25.png": "Gradient 25",
+                        "bg26.jpg": "Photo 9",
+                        "bg27.jpg": "Photo10",
+                        "bg28.jpg": "Photo11",
+                        "bg29.jpg": "Photo12",
+                        "bg30.jpg": "Photo13",
+                        "bg31.jpg": "Photo14",
+                        "bg32.jpg": "Photo15",
+                        "bg33.jpg": "Photo16",
+                        "bg34.jpg": "Photo17",
+                        "bg35.jpg": "Photo18",
+                        "bg36.jpg": "Photo19",
+                        "bg37.jpg": "Photo 20",
+                        "bg38.jpg": "Photo 21",
+                        "bg39.jpg": "Photo 22"
+                    },
+                    "default_value": false,
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_6398f7f4f35df",
+                    "label": "Color",
+                    "name": "cw_color",
+                    "type": "clone",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "clone": [
+                        "group_6391c29e6e4b9"
+                    ],
+                    "display": "seamless",
+                    "layout": "block",
+                    "prefix_label": 0,
+                    "prefix_name": 0
+                },
+                {
+                    "key": "field_63c1603916d2c",
+                    "label": "Class",
+                    "name": "class",
+                    "type": "clone",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "clone": [
+                        "group_63828db183777"
+                    ],
+                    "display": "seamless",
+                    "layout": "block",
+                    "prefix_label": 0,
+                    "prefix_name": 0
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_format",
+                "operator": "==",
+                "value": "audio"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1690291832
+}

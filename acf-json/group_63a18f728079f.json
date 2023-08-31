@@ -1,0 +1,245 @@
+{
+    "key": "group_63a18f728079f",
+    "title": "CW Dividers",
+    "fields": [
+        {
+            "key": "field_63c7b892ecaac",
+            "label": "Divider",
+            "name": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "open": 0,
+            "multi_expand": 0,
+            "endpoint": 0
+        },
+        {
+            "key": "field_639f86d96ca0b",
+            "label": "Divider",
+            "name": "cw_divider",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_63c7b8d3521bd",
+                    "label": "Divider Type",
+                    "name": "",
+                    "type": "tab",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "placement": "top",
+                    "endpoint": 0
+                },
+                {
+                    "key": "field_639f87cc6ca0c",
+                    "label": "Divider Type",
+                    "name": "cw_start_divider_type",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "none": "none",
+                        "border": "border",
+                        "angle": "angle",
+                        "wave": "wave",
+                        "vertical": "vertical"
+                    },
+                    "default_value": "none",
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_639f895ce37f2",
+                    "label": "Wave",
+                    "name": "cw_start_wave",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_639f87cc6ca0c",
+                                "operator": "==",
+                                "value": "wave"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "wave_1": "wave_1",
+                        "wave_2": "wave_2",
+                        "wave_3": "wave_3",
+                        "wave_4": "wave_4",
+                        "wave_5": "wave_5",
+                        "wave_6": "wave_6",
+                        "wave_7": "wave_7",
+                        "wave_8": "wave_8",
+                        "angle_1": "angle_1",
+                        "angle_2": "angle_2"
+                    },
+                    "default_value": "wave_1",
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_639f8980e37f3",
+                    "label": "Angle",
+                    "name": "cw_start_angle",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_639f87cc6ca0c",
+                                "operator": "==",
+                                "value": "angle"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "lower-start": "lower-start",
+                        "lower-end": "lower-end",
+                        "upper-start": "upper-start",
+                        "upper-end": "upper-end",
+                        "upper-end lower-start": "upper-end lower-start",
+                        "upper-start lower-end": "upper-start lower-end",
+                        "upper-start lower-start": "upper-start lower-start",
+                        "upper-end lower-end": "upper-end lower-end"
+                    },
+                    "default_value": "lower-start",
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_63a1900727a80",
+                    "label": "Vertical Divider",
+                    "name": "cw_vertical_divider",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_639f87cc6ca0c",
+                                "operator": "==",
+                                "value": "vertical"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "divider-v-start": "Start",
+                        "divider-v-end": "End"
+                    },
+                    "default_value": false,
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_63c7b8e2521be",
+                    "label": "Color",
+                    "name": "cw_color",
+                    "type": "clone",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_639f87cc6ca0c",
+                                "operator": "==",
+                                "value": "wave"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "clone": [
+                        "group_6391c29e6e4b9"
+                    ],
+                    "display": "seamless",
+                    "layout": "block",
+                    "prefix_label": 0,
+                    "prefix_name": 0
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_format",
+                "operator": "==",
+                "value": "audio"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1690291833
+}

@@ -1,0 +1,411 @@
+{
+    "key": "group_theme_social",
+    "title": "CW Social profiles",
+    "fields": [
+        {
+            "key": "field_63f3eefbf3fcb",
+            "label": "Social Profiles",
+            "name": "social_profiles",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_63f3ef0af3fcc",
+                    "label": "Тип",
+                    "name": "type",
+                    "type": "radio",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "Type 1": "Type 1",
+                        "Type 2": "Type 2",
+                        "Type 3": "Type 3",
+                        "Disable": "Disable"
+                    },
+                    "allow_null": 0,
+                    "other_choice": 0,
+                    "default_value": "",
+                    "layout": "horizontal",
+                    "return_format": "value",
+                    "save_other_choice": 0
+                },
+                {
+                    "key": "field_63f3fb68db560",
+                    "label": "Тип 1",
+                    "name": "",
+                    "type": "message",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_63f3ef0af3fcc",
+                                "operator": "==",
+                                "value": "Type 1"
+                            },
+                            {
+                                "field": "field_63f3ef0af3fcc",
+                                "operator": "!=",
+                                "value": "Disable"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "<nav class=\"nav social\">\r\n\t<a href=\"#\" class=\"btn btn-circle btn-sm btn-twitter\">\r\n\t\t<i class=\"uil uil-twitter\"><\/i>\r\n\t<\/a>\r\n\t<a href=\"#\" class=\"btn btn-circle btn-sm btn-facebook\">\r\n\t\t<i class=\"uil uil-facebook-f\"><\/i>\r\n\t<\/a>\r\n\t<a href=\"#\" class=\"btn btn-circle btn-sm btn-dribbble\">\r\n\t\t<i class=\"uil uil-dribbble\"><\/i>\r\n\t<\/a>\r\n<\/nav>",
+                    "new_lines": "wpautop",
+                    "esc_html": 0
+                },
+                {
+                    "key": "field_63f3fbb3e8e83",
+                    "label": "Тип 2",
+                    "name": "",
+                    "type": "message",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_63f3ef0af3fcc",
+                                "operator": "==",
+                                "value": "Type 2"
+                            },
+                            {
+                                "field": "field_63f3ef0af3fcc",
+                                "operator": "!=",
+                                "value": "Disable"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "<nav class=\"nav social social-muted\">\r\n\t<a href=\"#\"><i class=\"uil uil-twitter\"><\/i><\/a>\r\n\t<a href=\"#\"><i class=\"uil uil-facebook-f\"><\/i><\/a>\r\n\t<a href=\"#\"><i class=\"uil uil-dribbble\"><\/i><\/a>\r\n<\/nav>",
+                    "new_lines": "wpautop",
+                    "esc_html": 0
+                },
+                {
+                    "key": "field_63f3fbd7e8e84",
+                    "label": "Тип 3",
+                    "name": "",
+                    "type": "message",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_63f3ef0af3fcc",
+                                "operator": "==",
+                                "value": "Type 3"
+                            },
+                            {
+                                "field": "field_63f3ef0af3fcc",
+                                "operator": "!=",
+                                "value": "Disable"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "<nav class=\"nav social\">\r\n\t<a href=\"#\"><i class=\"uil uil-twitter\"><\/i><\/a>\r\n\t<a href=\"#\"><i class=\"uil uil-facebook-f\"><\/i><\/a>\r\n\t<a href=\"#\"><i class=\"uil uil-dribbble\"><\/i><\/a>\r\n<\/nav>",
+                    "new_lines": "wpautop",
+                    "esc_html": 0
+                },
+                {
+                    "key": "field_63f3ef98f3fcd",
+                    "label": "Social",
+                    "name": "social",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_63f3ef0af3fcc",
+                                "operator": "!=",
+                                "value": "Disable"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_63f3efabf3fce",
+                            "label": "Telegram",
+                            "name": "telegram",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_63f3efb3f3fcf",
+                            "label": "Whatsapp",
+                            "name": "whatsapp",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_63f3efb9f3fd0",
+                            "label": "Vkontakte",
+                            "name": "vkontakte",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_63f3efc1f3fd1",
+                            "label": "Facebook",
+                            "name": "facebook",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_63f3f0cff3fda",
+                            "label": "Instagram",
+                            "name": "instagram",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_63f3effff3fd5",
+                            "label": "Twitter",
+                            "name": "twitter",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_63f3eff5f3fd4",
+                            "label": "Dribbble",
+                            "name": "dribbble",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_63f3f092f3fd6",
+                            "label": "Youtube",
+                            "name": "youtube",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_63f3f098f3fd7",
+                            "label": "Github",
+                            "name": "github",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_63f3f0c3f3fd8",
+                            "label": "Linkedin",
+                            "name": "linkedin",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_63f3f0cbf3fd9",
+                            "label": "Line",
+                            "name": "line",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_63f3f12cf3fde",
+                            "label": "Behance",
+                            "name": "behance",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_format",
+                "operator": "==",
+                "value": "audio"
+            }
+        ]
+    ],
+    "menu_order": 1,
+    "position": "normal",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1690291840
+}

@@ -1,0 +1,229 @@
+{
+    "key": "group_6391c29e6e4b9",
+    "title": "CW Color",
+    "fields": [
+        {
+            "key": "field_6391f013c33b6",
+            "label": "Color",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_6391c2c0d2d69",
+            "label": "Color",
+            "name": "color",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_6391c325d2d6a",
+                    "label": "Select Type Color",
+                    "name": "select_type_color",
+                    "type": "select",
+                    "instructions": "Выбрать тип цвета",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "None": "None",
+                        "Solid": "Solid",
+                        "Soft": "Soft",
+                        "Pale": "Pale",
+                        "Gradient": "Gradient"
+                    },
+                    "default_value": "Solid",
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_6391c370d2d6b",
+                    "label": "Select Solid Color",
+                    "name": "select_solid_color",
+                    "type": "select",
+                    "instructions": "Выбрать Однотонный Цвет",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_6391c325d2d6a",
+                                "operator": "==",
+                                "value": "Solid"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_6391c325d2d6a",
+                                "operator": "==",
+                                "value": "Soft"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_6391c325d2d6a",
+                                "operator": "==",
+                                "value": "Pale"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "primary": "primary",
+                        "dark": "dark",
+                        "light": "light",
+                        "white": "white",
+                        "fuchsia": "fuchsia",
+                        "green": "green",
+                        "orange": "orange",
+                        "pink": "pink",
+                        "purple": "purple",
+                        "red": "red",
+                        "sky": "sky",
+                        "violet": "violet",
+                        "yellow": "yellow",
+                        "leaf": "leaf",
+                        "ash": "ash",
+                        "navy": "navy",
+                        "grape": "grape",
+                        "muted": "muted",
+                        "telegram": "telegram",
+                        "whatsapp": "whatsapp",
+                        "facebook": "facebook",
+                        "pinterest": "pinterest",
+                        "dewalt": "dewalt",
+                        "bitbucket": "bitbucket"
+                    },
+                    "default_value": "primary",
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_6391c3d8d2d6c",
+                    "label": "Gradient Color",
+                    "name": "gradient_color",
+                    "type": "select",
+                    "instructions": "Выбрать Градиентный Цвет",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_6391c325d2d6a",
+                                "operator": "==",
+                                "value": "Gradient"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "gradient-1": "gradient-1",
+                        "gradient-2": "gradient-2",
+                        "gradient-3": "gradient-3",
+                        "gradient-4": "gradient-4",
+                        "gradient-5": "gradient-5",
+                        "gradient-6": "gradient-6",
+                        "gradient-7": "gradient-7",
+                        "bg-gradient-primary": "bg-gradient-primary",
+                        "bg-gradient-aqua": "bg-gradient-aqua",
+                        "bg-gradient-green": "bg-gradient-green",
+                        "bg-gradient-leaf": "bg-gradient-leaf",
+                        "bg-gradient-navy": "bg-gradient-navy",
+                        "bg-gradient-orange": "bg-gradient-orange",
+                        "bg-gradient-pink": "bg-gradient-pink",
+                        "bg-gradient-purple": "bg-gradient-purple",
+                        "bg-gradient-red": "bg-gradient-red",
+                        "bg-gradient-violet": "bg-gradient-violet",
+                        "bg-gradient-yellow": "bg-gradient-yellow",
+                        "bg-gradient-fuchsia": "bg-gradient-fuchsia",
+                        "bg-gradient-sky": "bg-gradient-sky",
+                        "bg-gradient-grape": "bg-gradient-grape",
+                        "bg-gradient-reverse-primary": "bg-gradient-reverse-primary",
+                        "bg-gradient-reverse-aqua": "bg-gradient-reverse-aqua",
+                        "bg-gradient-reverse-green": "bg-gradient-reverse-green",
+                        "bg-gradient-reverse-leaf": "bg-gradient-reverse-leaf",
+                        "bg-gradient-reverse-navy": "bg-gradient-reverse-navy",
+                        "bg-gradient-reverse-orange": "bg-gradient-reverse-orange",
+                        "bg-gradient-reverse-pink": "bg-gradient-reverse-pink",
+                        "bg-gradient-reverse-purple": "bg-gradient-reverse-purple",
+                        "bg-gradient-reverse-red": "bg-gradient-reverse-red",
+                        "bg-gradient-reverse-violet": "bg-gradient-reverse-violet",
+                        "bg-gradient-reverse-yellow": "bg-gradient-reverse-yellow",
+                        "bg-gradient-reverse-fuchsia": "bg-gradient-reverse-fuchsia",
+                        "bg-gradient-reverse-sky": "bg-gradient-reverse-sky",
+                        "bg-gradient-reverse-grape": "bg-gradient-reverse-grape",
+                        "bg-gradient-reverse-dewalt": "bg-gradient-reverse-dewalt",
+                        "bg-gradient-reverse-bitbucket": "bg-gradient-reverse-bitbucket",
+                        "bg-gradient-telegram": "bg-gradient-telegram",
+                        "bg-gradient-whatsapp": "bg-gradient-whatsapp",
+                        "bg-gradient-facebook": "bg-gradient-facebook",
+                        "bg-gradient-pinterest": "bg-gradient-pinterest",
+                        "bg-gradient-bitbucket": "bg-gradient-bitbucket",
+                        "bg-gradient-dewalt": "bg-gradient-dewalt"
+                    },
+                    "default_value": "gradient-1",
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 1,
+                    "ajax": 0,
+                    "return_format": "value",
+                    "placeholder": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "user_role",
+                "operator": "==",
+                "value": "translator"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1690291832
+}
