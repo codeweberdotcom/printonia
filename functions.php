@@ -301,7 +301,7 @@ function base_model_description()
       </section>
 <?php
    }
-
+}
 
 add_action('woocommerce_after_single_product_summary', 'base_model_description', 0);
 
